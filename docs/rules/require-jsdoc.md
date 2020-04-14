@@ -9,9 +9,11 @@ In terms of this rule JSdoc - it's any not empty comment block which starts with
 
 This rule requires JSDoc comments for specified nodes. Supported nodes:
 
-* `"VueProps"` - each prop should has JSdoc
-* `"VuexState"` - each action should has JSdoc
-* `"VuexActions"` - each state property should has JSdoc
+* `"VueProps"` - each prop should have JSdoc
+* `"VueComputed"` - each computed should have JSdoc
+* `"VueMethods"` - each method should have JSdoc
+* `"VuexState"` - each action should have JSdoc
+* `"VuexActions"` - each state property should have JSdoc
 
 ## Options
 
@@ -26,6 +28,8 @@ Default option settings are:
     "require-jsdoc": ["error", {
         "require": {
             "VueProps": true,
+            "VueComputed": true,
+            "VueMethods": true,
             "VuexState": false,
             "VuexActions": false
         }
